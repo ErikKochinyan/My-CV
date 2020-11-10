@@ -1,0 +1,98 @@
+//Task 1
+
+let a = 12;
+if(a % 2 === 0){
+  console.log('The number is even')
+} else console.log('The number is odd')
+
+//Task 2
+/*let q = 45;
+let w = (-12);
+let e = 0;
+let r = 3;
+let t = (-15);
+let result = ((q + w + e + r + t)/ 5)
+console.log(result);
+*/
+//Task 3
+
+const number = 110;
+let lastNumber = number % 10;
+if(lastNumber > 0 && lastNumber !== number){
+  console.log(lastNumber + '' + Math.floor(number / 10))
+} else console.log(number)
+
+//Task 4
+
+let numb = 24;
+let q = 3;
+let w = 5;
+let e = 7;
+if (numb % q === 0 || numb % w === 0 || numb % e === 0){
+  if (numb % q === 0 && numb % w === 0 && numb % e === 0){
+  console.log(`${numb} is multiple of ${q} and ${w} nad ${e}`);
+ } else if (numb % q === 0 && numb % w === 0){
+    console.log (`${numb} is multiple of ${q} and ${w}`);
+  } else if (numb % q === 0 && numb % e === 0){
+    console.log (`${numb} is multiple of ${q} and ${e}`);
+  } else if (numb % w === 0 && numb % e === 0){
+    console.log(`${numb} is multiple of ${w} and ${e}`);
+  } else if (numb % q === 0){
+    console.log(`${numb} is multiple of ${q}`);
+  } else if (numb % w === 0){
+    console.log(`${numb} is multiple of ${w}`);
+  } else if (numb % e === 0){
+    console.log (`${numb} is multiple of ${e}`);
+  } 
+} else { 
+    console.log(`${numb} is not multiple ${q}, ${w} and ${e}`);
+}
+
+//Task 6
+
+function calculat(x, operator, y){
+  if(x !== 0 && y !== 0 ){
+   if(operator === '+'){
+     return x + y 
+     } else if (operator === '-'){
+        return x - y
+       } else if(operator === '*'){
+           return x * y
+        } else if(operator === '/'){
+             return x / y
+         }
+  } else return ('can\'t delive 0!')
+} 
+console.log(calculat(2, '*', 2))
+
+
+
+//Task 7
+
+function intWithinBounds(a, b, c){
+  if(a > b && a < c && a && a % 1 === 0){
+    return true
+  } else return false
+}
+console.log(intWithinBounds(3, 1, 9))
+
+
+//Task 8
+
+function hasKey(obj, prop){
+  if(obj.hasOwnProperty(prop)){
+     console.log (true)
+  } else console.log (false)
+} 
+console.log(hasKey({ a: 44, b: 45, c: 46 }, 'd'))
+
+//Task 9
+
+function add(a){
+
+ return  function (a) {
+    return a + 'ly'
+  } 
+}
+
+console.log(add()('hopeless'));
