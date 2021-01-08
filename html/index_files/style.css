@@ -1,0 +1,45 @@
+.fakeimg {
+  height: 200px;
+  background: #aaa;
+}
+
+h1{
+  font-style: italic;
+}
+
+h2{
+  text-align: center;
+  background-color: darkgray;
+  color: rgb(194, 207, 235);
+  font-style:oblique
+}
+
+h5{
+  color: rgb(59, 58, 58);
+  font-style: italic;
+}
+
+footer{
+  background-color: rgb(126, 119, 119);
+  color: blanchedalmond;
+  height: 100%;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 5px;
+}
+.footerdiv{
+  text-align: right;
+  font-size: 30%;
+}
+
+.tabclass{
+  color: rgb(17, 17, 80);
+  font-style: oblique;
+  font-size: 20px;
+}
+
+.liclass{
+  color: rgb(59, 15, 59);
+  font-family:serif;
+  font-size: 25PX;
+}
